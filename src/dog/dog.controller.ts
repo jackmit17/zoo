@@ -19,5 +19,9 @@ export class DogController {
     return this.dogService.introduce();
   }
 
-  
+  @Post('edit')
+  public modifyDetail(@Body() body: string): string {
+    console.log("body:", body);
+    return this.dogService.modifyDetail();
+  }
 }

@@ -11,5 +11,7 @@ export class DogService {
         return "My name is Rex";
     }
 
-    
+    public modifyDetail(): string {
+        return "Succesfully modified";
+    }
 }
